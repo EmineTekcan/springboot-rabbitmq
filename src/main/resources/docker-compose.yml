@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+
+  rabbit_mq:
+    image: rabbitmq:3-management
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    restart: always
+    environment:
+      - RABBITMQ_DEFAULT_USER=emine
+      - RABBITMQ_DEFAULT_PASS=deneme
